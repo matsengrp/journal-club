@@ -1,0 +1,10 @@
+
+
+
+
+
+http://en.wikipedia.org/wiki/Rapid_amplification_of_cDNA_ends
+
+
+From http://www2.nau.edu/~fpm/immunology/Exams/antibodygenes.html :
+A leader sequence (L) at the beginning of each VH segment encodes a signal sequence which is used to transport the newly synthesized H chains into the endoplasmic reticulum; it is not present in the final H chain.
