@@ -1,0 +1,15 @@
+from SCons.Script import VariantDir, Environment, \
+        Builder, Depends, Flatten
+import os
+
+VariantDir('_build', src_dir='.')
+
+env = Environment(ENV=os.environ)
+
+notation=env.PDF(target='_build/notation.pdf',source='notation.tex')
+Default(notation)
+
+# requires inotify-tools
+cont_build = env.Command('.continuous', ['notation.tex'],
+    'while :; do inotifywait -e modify $SOURCES; scons -Q; done')
+Alias('continuous', cont_build)

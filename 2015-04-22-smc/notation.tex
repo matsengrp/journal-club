@@ -1,0 +1,42 @@
+\documentclass{report}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\data}{\mathcal Y}
+\newcommand{\trees}{\mathcal T}
+
+\newcommand{\PP}{\mathbb P}
+\newcommand{\EE}{\mathbb E}
+
+\begin{document}
+
+Bayes theorem: posterior is proportional to prior times likelihood
+\begin{gather*}
+\PP(t | \data) \propto \PP(t) \PP(\data | t) \\
+\PP(\data) \PP(t | \data) = \PP(t) \PP(\data | t).
+\end{gather*}
+
+\begin{description}
+\item[$\data$]: data
+\item[$\Sigma_r$]: rooted splits, i.e. bipartitions
+\item[$\mathcal F_\trees$]: Borel $\sigma$-algebra on trees
+\item[$\pi_\data: \mathcal F_\trees \rightarrow [0, \infty)$]: unnormalized posterior target measure given $\data$. AKA $\pi$.
+\item[$\gamma_\data: \mathcal F_\trees \rightarrow [0, \infty)$]: unnormalized posterior density (think $\PP(t) \PP(\data | t)$). AKA $\gamma$.
+\item[$\gamma_*$]: extension of $\gamma$ to partially-coalesced trees
+\item[$\|\pi\|$]: $\pi(\trees)$, the total posterior, equal to $\PP(\data)$ by Bayes
+\item[$\bar \pi$]: normalized measure $\pi / \|\pi\|$
+\item[$\phi$]: test function, here a function from trees to the real line
+\item[$\bar \pi(\phi)$]: expectation of $\phi$ with respect to $\bar \pi$
+\item[$s$]: particle
+\item[$s_{r,k}$]: $k$th particle at generation $r$ (non-uniformly weighted)
+\item[$w_{r,k}$]: weight of $s_{r,k}$, $\frac{\gamma_*(s_{r,k})}{\gamma_*(\tilde s_{r-1,k}) q(\tilde s_{r-1,k} \rightarrow s_{r,k})}$
+\item[$\tilde s_{r,k}$]: resampled $k$th particle at generation $r$ (uniformly weighted)
+\item[$\nu_s$]: proposal measure starting at $s$
+\item[$q(s \rightarrow s')$]: density of $\nu_s$ starting at $s$
+\item[$\rho(s)$]: rank or ``generation number'' of particle $s$
+\item[$\pi_{r,K}$]: (random) empirical measure from running algorithm with $K$ particles
+\item[$\lambda_{r,K}$]: (random) measure of the particles \emph{proposed} at generation $r$, which is $\pi_{r,K}$ applied to the pre-image of $\nu$
+\item[$\pi_r$]: (fixed) measure with Radon-Nikodym derivative $\gamma_*$ at generation $r$
+
+\end{description}
+\end{document}
