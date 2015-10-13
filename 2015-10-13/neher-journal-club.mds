@@ -1,0 +1,40 @@
+% Population genetics background.
+% Erick
+
+## Variants on classical population genetics
+
+* changing population size
+* (some sort of) population structure
+* diploidy
+
+## Assumptions
+
+* weak selection
+* weak or no linkage
+* one selection event completes before another begins
+
+## For quickly evolving populations
+
+* strong selection
+* linkage
+* sex sometimes
+* many genotypes "in play" at the same time
+* distribution of selection effects
+
+## Terminology
+
+* locus
+* allele
+* drift
+* Mueller's ratchet
+* mutation load
+* effective population size
+* frequency-dependent selection (ignored here)
+* epistasis
+
+## Selective sweep
+
+* Hill-Robertson interference
+* hitchhiking, and more generally draft
+
+## What does this mean for phylogenetics?

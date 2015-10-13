@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Erick" />
+  <title>Population genetics background.</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'reveal.js/css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <style type="text/css">
+      .reveal { font-size: 32px; }
+      .reveal h1 { font-size: 1.6em; }
+      .reveal h2 { font-size: 1.35em; }
+      .reveal h3 { font-size: 1.35em; }
+  
+      .reveal section img {
+          border: none;
+          box-shadow: none;
+          vertical-align: middle;
+      }
+  
+      .reveal h1,
+      .reveal h2,
+      .reveal h3,
+      .reveal h4,
+      .reveal h5,
+      .reveal h6 {
+        font-family: "News Cycle", Lato, sans-serif;
+        text-shadow: none; }
+  
+      div.bigpurple {
+        font-size: 4em;
+        line-height: 1em;
+        color: purple;
+      }
+  
+      div.caption {
+        font-size: 24px;
+        line-height: 1em;
+      }
+  
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Population genetics background.</h1>
+    <h2 class="author">Erick</h2>
+    <h3 class="date"></h3>
+</section>
+
+<section id="variants-on-classical-population-genetics" class="slide level2">
+<h1>Variants on classical population genetics</h1>
+<ul>
+<li>changing population size</li>
+<li>(some sort of) population structure</li>
+<li>diploidy</li>
+</ul>
+</section>
+<section id="assumptions" class="slide level2">
+<h1>Assumptions</h1>
+<ul>
+<li>weak selection</li>
+<li>weak or no linkage</li>
+<li>one selection event completes before another begins</li>
+</ul>
+</section>
+<section id="for-quickly-evolving-populations" class="slide level2">
+<h1>For quickly evolving populations</h1>
+<ul>
+<li>strong selection</li>
+<li>linkage</li>
+<li>sex sometimes</li>
+<li>many genotypes “in play” at the same time</li>
+<li>distribution of selection effects</li>
+</ul>
+</section>
+<section id="terminology" class="slide level2">
+<h1>Terminology</h1>
+<ul>
+<li>locus</li>
+<li>allele</li>
+<li>drift</li>
+<li>Mueller’s ratchet</li>
+<li>mutation load</li>
+<li>effective population size</li>
+<li>frequency-dependent selection (ignored here)</li>
+<li>epistasis</li>
+</ul>
+</section>
+<section id="selective-sweep" class="slide level2">
+<h1>Selective sweep</h1>
+<ul>
+<li>Hill-Robertson interference</li>
+<li>hitchhiking, and more generally draft</li>
+</ul>
+</section>
+<section id="what-does-this-mean-for-phylogenetics" class="slide level2">
+<h1>What does this mean for phylogenetics?</h1>
+</section>
+    </div>
+  </div>
+
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,         // Display controls in the bottom right corner
+        progress: true,         // Display a presentation progress bar
+        history: true,          // Push each slide change to the browser history
+        center: true,                       // Vertical centering of slides
+        maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
+        slideNumber: true,                // Display the page number of the current slide
+        theme: 'simple', // available themes are in /css/theme
+        transition: 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+    </body>
+</html>
